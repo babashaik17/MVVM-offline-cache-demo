@@ -1,6 +1,6 @@
-# mPokket Android Assignment:
+# MVVM-offline-cache-demo:
 
-The goal of this assignment is to build an app that shows the current trending Github
+The goal of this app is to build an app that shows the current trending Github
 repositories fetched from a public API. The design and business specifications have been
 provided below. We expect you to follow it as closely as possible.
 
@@ -37,31 +37,6 @@ View)
 · Recycler view with card view should be used to display the repo list.
 · Clicking on an item from the repo list it should display the detailed description of the
 repo in a new Activity (Repo Details).
-```
-
-**Project Requirement:**
-```
-1. While the data is being fetched, the app should show a loading state. Shimmer animation is optional.
-2. If the app is not able to fetch the data, then it should show an error state to the user with
-    an option to retry again.
-3. The app should be able to handle configuration changes (like rotation).
-4. The app should have 100% offline support. Once the data is fetched successfully from
-    remote, it should be stored locally and served from the cache until the cache expires.
-5. The cached data should only be valid for a duration of 2 hours. After that, the app should
-    attempt to refresh the data from remote and purge the cache only after successful data
-    fetch.
-6. The app should give a pull-to-refresh option to the user to force fetch data from remote.
-```
-
-**Basic Requirements:**
-```
-1. Implement any android architecture pattern (like MVC, MVVM ) and use ​ **Android
-Jetpack Components.**
-2. Follow​ ​standard Material Guidelines for UI.
-3. Maintain a proper git commit history.
-4. Follow standard coding guidelines (Kotlin Coding Conventions).
-5. Proper abstraction for Dependency Injection.
-6. Use a good unit and UI test coverage (Optional).
 ```
 
 **API Details:**
